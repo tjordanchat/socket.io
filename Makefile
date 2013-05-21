@@ -1,4 +1,3 @@
-
 ALL_TESTS = $(shell find test/ -name '*.test.js')
 ALL_BENCH = $(shell find benchmarks -name '*.bench.js')
 
@@ -12,6 +11,7 @@ run-tests:
 
 test:
 	@$(MAKE) NODE_PATH=lib TESTS="$(ALL_TESTS)" run-tests
+	find
 
 test-cov:
 	@TESTFLAGS=--cov $(MAKE) test

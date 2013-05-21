@@ -1,11 +1,10 @@
-
 var http = require('http').Server;
 var io = require('..');
 var ioc = require('socket.io-client');
 var request = require('supertest');
 var expect = require('expect.js');
 
-// creates a socket.io client for the given server
+// creates a socket.io client for the given server z
 function client(srv, nsp, opts){
   if ('object' == typeof nsp) {
     opts = nsp;

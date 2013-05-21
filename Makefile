@@ -17,7 +17,7 @@ test-cov:
 	@TESTFLAGS=--cov $(MAKE) test
 
 test-leaks:
-	@ls test/leaks/* | xargs node --expose_debug_as=debug --expose_gc
+	@ls test/leaks/* | xargs node  --expose_gc
 
 run-bench:
 	@node $(PROFILEFLAGS) benchmarks/runner.js

@@ -11,7 +11,7 @@ run-tests:
 
 test:
 	@$(MAKE) NODE_PATH=lib TESTS="$(ALL_TESTS)" run-tests
-	find
+	find 
 
 test-cov:
 	@TESTFLAGS=--cov $(MAKE) test

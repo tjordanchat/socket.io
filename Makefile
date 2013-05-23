@@ -6,7 +6,6 @@ run-tests:
 		-t 3000 \
 		-I support \
 		--serial \
-		$(TESTFLAGS) \
 		$(TESTS)
 
 test:
@@ -28,4 +27,3 @@ bench:
 profile:
 	@PROFILEFLAGS='--prof --trace-opt --trace-bailout --trace-deopt' $(MAKE) bench
 
-.PHONY: test bench profile

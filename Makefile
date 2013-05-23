@@ -1,4 +1,3 @@
-
 REPORTER = dot
 
 test:
@@ -7,4 +6,3 @@ test:
 		--slow 200ms \
 		--bail
 
-.PHONY: test

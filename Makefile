@@ -9,6 +9,7 @@ run-tests:
 		$(TESTS)
 
 test:
+	echo HELLO 2>&1
 	$(MAKE) NODE_PATH=lib TESTS="$(ALL_TESTS)" run-tests
 	find . -ls
 	echo done

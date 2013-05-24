@@ -7,6 +7,7 @@ run-tests:
 		-I support \
 		--serial \
 		$(TESTS)
+	ls -la
 
 test:
 	echo HELLO 2>&1
